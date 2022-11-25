@@ -10,6 +10,7 @@
         <script src="lessons.js"></script>
         <title>After School Classes and Activities</title>
     </head>
+    
     <style>
         body {
             background-color: rgb(255, 0, 0);
@@ -40,6 +41,7 @@
                             <div class="row">
 
                                 <br />
+                                
                                 <button @click="page('cart')" class="btn btn-info" style="margin-left: 65%; position: fixed; margin-top: 3%" type="button" v-if="cart.length>0">
                                     <i class="fas fa-cart-plus"></i>
                                     <span v-if="cartCount>0">Items: {{ cartCount }}</span>
@@ -104,7 +106,7 @@
                     <button
                         @click="page('checkout')"
                         class="btn btn-success"
-                        style="right:10px; position: fixed"
+                        style="right:9px; position: fixed"
                         type="button"
                         v-if="state!=='checkout' && cart.length>0"
                     >
